@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>THE NUMBER GUESSING GAME</h1>
+            <h2 id="message1">I'm thinking of a number between 1-100.</h2>
+            <h3 id="message2">Can you guess what number it is?</h3>
+        </header> 
+        
+        <div id="users-answer">
+            <input id="users-guess" type="text" placeholder="Guess Here" maxlength="3">
+            <button id="play">Enter</button> 
+            <p id="no_of_guesses">0</p>
+        </div>
+        
+        <div id="guesses">
+            <button id="guess1" class="guess" title="Your first guess">?</button>
+            <button id="guess2" class="guess" title="Your second guess">?</button>
+            <button id="guess3" class="guess" title="Your third guess">?</button>
+            <button id="guess4" class="guess" title="Your fourth guess">?</button>
+            <button id="guess5" class="guess" title="Your fifth guess">?</button>
+        </div>
+        
+        <div id="reset-hint">
+            <button id="restart" title="Click to restart the game">Let's play again!</button>
+            <button id="hint" title="Click to get a hint">I need a hint.</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

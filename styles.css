@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(36, 27, 12), rgb(112, 111, 111), rgb(31, 21, 22));
+    min-height: 100vh;
+}
+
+header {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#no_of_guesses {
+    display: none;
+
+}
+
+h1 {
+    letter-spacing: 3px;
+    margin: 2rem;
+    font-size: 40px;
+    background: -webkit-linear-gradient(white, rgb(95, 1, 1), rgb(48, 35, 163));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    letter-spacing: 1px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#users-answer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+#users-guess {
+    border: 3px solid lightseagreen;
+    min-height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    background: linear-gradient(gray, white, gray);
+    box-shadow: 1px 5px 20px;
+    cursor: pointer;
+    transform: scale(1.03);
+
+    transition-duration: 1s;
+    font-weight: 700;
+}
+
+/* #users-guess:hover{
+    
+
+} */
+#play {
+    margin: 30px;
+    background: linear-gradient(red, blue, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 800;
+    border: 1px dotted black;
+    /* border-top: none;
+    border-left: none;
+    border-right: none; */
+    border-image: linear-gradient(red, green, blue) 1;
+    animation:  3s rotate infinite;
+    box-shadow: 1px 0px 20px;
+}
+
+#play:hover {
+    transform: scale(1.05);
+    transition: 0.1s;
+    background: linear-gradient(purple, orange, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#guesses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 40px;
+
+}
+
+.guess {
+    padding: 30px 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, rgb(57, 238, 12), rgb(27, 218, 43));
+    cursor: pointer;
+}
+
+.guess:nth-child(2) {
+    background-image: linear-gradient(to right, rgb(57, 238, 12), orange);
+}
+
+.guess:nth-child(3) {
+    background-image: linear-gradient(to right, rgb(116, 189, 98), rgb(211, 46, 46));
+}
+
+.guess:nth-child(4) {
+    background-image: linear-gradient(to right, rgb(216, 147, 147), red);
+}
+
+.guess:nth-child(5) {
+    background-image: linear-gradient(to right, red, darkred);
+
+}
+
+.guess:hover {
+    box-shadow: 1px 5px 20px;
+}
+
+#reset-hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 4rem;
+}
+
+#restart {
+    padding: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(rgb(175, 49, 49), lightblue);
+    box-shadow: 1px 5px 10px;
+}
+
+#restart:hover {
+    transform: scale(1.1);
+    transition: 0.25s;
+    color: white;
+}
+
+#hint {
+    padding: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(rgb(90, 170, 197), rgb(129, 123, 219));
+    box-shadow: 1px 5px 10px;
+}
+
+#hint:hover {
+    transform: scale(1.1);
+    transition: 0.25s;
+    color: white;
+}
