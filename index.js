@@ -9,7 +9,6 @@ let guess5 = document.getElementById('guess5')
 
 let play = document.getElementById("play")
 
-let answer = Math.floor(Math.random() * 100) + 1
 let guessCount = document.getElementById("no_of_guesses")
 let guessDiv = document.getElementById("guesses")
 
@@ -18,6 +17,7 @@ let restart = document.getElementById("restart")
 let hint = document.getElementById('hint')
 
 
+let answer = Math.floor(Math.random() * 100) + 1
 window.onload = function () {
     guess.focus()
 }
